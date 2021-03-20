@@ -1,8 +1,4 @@
-# Pull base image 
-From tomcat:8-jre8 
-
-# Maintainer
-MAINTAINER "valaxytech" 
-
-# copy war file on to container 
-COPY ./webapp.war /usr/local/tomcat/webapps
+FROM tomcat:8
+# Take the war and copy to webapps of tomcat
+COPY /var/lib/jenkins/workspace/docker_pipeline/webapp/target/webapp.war /usr/local/tomcat/webapps/
+# Added for jenkins demo
