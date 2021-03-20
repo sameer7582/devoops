@@ -8,6 +8,6 @@ COPY /var/lib/jenkins/workspace/docker_pipeline/webapp/target/webapp.war /usr/lo
 From tomcat:8-jre8 
 
 # Maintainer 
-MAINTAINER "valaxytech@gmail.com" 
+MAINTAINER "kumarsameer.sahu00@gmail.com" 
 COPY ./webapp.war /usr/local/tomcat/webapps
 >>>>>>> parent of cb38c7a... Update Dockerfile
